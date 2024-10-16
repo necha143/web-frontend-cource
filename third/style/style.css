@@ -1,0 +1,171 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1f1d20;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 10px;
+}
+
+header h1 {
+    margin-left: 2%;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #f1aa93;
+}
+
+main {
+    margin-top: 110px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px;
+    background-image: url('../images/background-jet.JPG');
+    background-size: cover;
+    position: relative;
+    min-height: 900px;
+}
+
+.aside-left, .description, .aside-right {
+    margin-top: 5%;
+    flex: 1;
+    max-width: 30%;
+    box-sizing: border-box;
+}
+
+.aside-left, .aside-right {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin-top: 10%;
+    max-width: 30%;
+    border-radius: 10px;
+}
+
+.aside-left h3, .aside-right h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.aside-left p, .aside-right p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+.aside-left sub {
+    color: #f1aa93;
+    font-weight: bold;
+}
+
+.description {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 60%;
+}
+
+.description h2.slogan {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.description p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.jets {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+    margin-bottom: 5%;
+}
+
+.jet {
+    padding: 20px;
+    margin-top: 15px;
+    text-align: center;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.jet:hover {
+    background-color: black;
+    box-shadow: 0 4px 8px rgba(241, 170, 141, 0.3);
+}
+
+.jet h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.jet p {
+    font-size: 18px;
+    color: #f1aa93;
+}
+
+.jet a img {
+    width: 350px;
+    height: 200px;
+    cursor: pointer;
+}
+
+footer {
+    box-shadow: 0 -4px 8px rgba(241, 170, 141, 0.3);
+    padding: 20px;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .aside-left,
+    .aside-right {
+        display: none;
+    }
+
+    .jets {
+        grid-template-columns: 1fr;
+    }
+}
