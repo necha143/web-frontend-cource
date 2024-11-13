@@ -1,0 +1,59 @@
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.jets-catalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.pilots-list {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.pilot-info {
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #202020;
+}
+
+.pilot-info p {
+    color: #fff;
+    margin: 5px 0;
+}
+
+.pilot-info p strong {
+    color: #f1aa93;
+}
+
+.preloader {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.preloader img {
+    width: 50px;
+    animation: rotate-plane 1.5s linear infinite;
+}
+
+@keyframes rotate-plane {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}

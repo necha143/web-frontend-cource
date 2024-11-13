@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Подбор бизнес-джета">
+    <meta name="keywords" content="бизнес-джеты, самолеты, выбор, luxury, jet">
+    <title>Подобрать джет - Jet Luxury</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/consultations.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/consultations.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Jet Luxury</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="store.html">Магазин</a></li>
+                <li><a href="choose-jet.html">Подобрать джет</a></li>
+                <li><a href="pilots.html">Пилоты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="choose-jet-main">
+        <h1>Подбор бизнес-джета</h1>
+        <div class="description">
+            <p>Нужна помощь с выбором? Мы поможем подобрать идеальный бизнес-джет по вашим параметрам. Запишитесь ниже для консультации</p>
+        </div>
+        <form class="contact-me-form" id="contact-me-form">
+            <h2>Заполните форму и мы Вам перезвоним:</h2>
+
+            <label for="consultantName">Имя консультанта:</label>
+            <select id="consultantName" name="consultantName" required>
+                <option value="Александр">Александр</option>
+                <option value="Алексей">Алексей</option>
+                <option value="Вадим">Вадим</option>
+                <option value="Елисей">Елисей</option>
+                <option value="Никита">Никита</option>
+                <option value="Матвей">Матвей</option>
+            </select>
+
+            <label for="phone">Номер телефона:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="time">Дата консультации:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Время консультации:</label>
+            <input type="time" id="time" name="time" min="10:00" max="20:00" required>
+
+            <label for="description">Описание джета (необязательное):</label>
+            <textarea id="description" name="description"></textarea>
+
+            <label for="price">Ожидаемая цена (необязательное):</label>
+            <input type="number" id="price" name="price">
+
+            <button type="submit">Отправить</button>
+        </form>
+
+        <div class="consultantions">
+            <h2>Расписание консультаций:</h2>
+            <table id="consultantions-table">
+                <thead>
+                    <tr>
+                        <th>Имя консультанта</th>
+                        <th>Телефон</th>
+                        <th>Время</th>
+                        <th>Дата</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>Связаться с нами: +7 123 456 78 90 | info@jetluxury.com</p>
+    </footer>
+</body>
+</html>
