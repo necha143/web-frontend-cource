@@ -1,0 +1,43 @@
+#play-tips {
+    background-color: #202020;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    margin-left: 500px; 
+}
+
+#play-tips:hover {
+    cursor: pointer;
+}
+
+.customTooltip {
+    background-color: #1f1d20;
+    color: #fff;
+    border: 2px solid #f1aa93;
+    border-radius: 8px;
+}
+
+.customTooltip .introjs-tooltiptext {
+    color: #f1aa93;
+}
+
+.customHighlight {
+    box-shadow: 0 0 10px 2px #f1aa93;
+    border-radius: 4px;
+}
+
+.introjs-button.introjs-nextbutton {
+    background-color: #f1aa93;
+    color: #000;
+}
+
+.introjs-button.introjs-prevbutton {
+    background-color: #444;
+    color: #fff;
+}
+
+.introjs-button.introjs-donebutton {
+    background-color: #f1aa93;
+    color: #000;
+}
